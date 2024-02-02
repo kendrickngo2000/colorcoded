@@ -7,11 +7,16 @@
 
 import SwiftUI
 
+// first file that runs in app, main
 @main
 struct colorcodedApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                HomeView()
+                    .navigationBarHidden(true)
+            }
         }
     }
 }
+
