@@ -177,8 +177,8 @@
 		066407CD2B6B9EDA00E5CD98 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				060779642B6BA2A000E46BAE /* Components */,
 				066407CE2B6B9F4400E5CD98 /* Home */,
+				060779642B6BA2A000E46BAE /* Components */,
 			);
 			path = Core;
 			sourceTree = "<group>";

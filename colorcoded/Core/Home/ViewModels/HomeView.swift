@@ -23,9 +23,9 @@ struct HomeView: View {
     }
 }
 
-#Preview {
-    NavigationView{
-        HomeView()
-            .navigationBarHidden(true)
+struct HomeView_Previews: PreviewProvider {
+    static var previews: some View {
+            HomeView()
+                .navigationBarHidden(true)
     }
 }
