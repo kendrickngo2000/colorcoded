@@ -1,6 +1,6 @@
 # colorcoded
-## Author(s): Kendrick Ngo
-## CWID: 888787934
+ Author(s): Kendrick Ngo
+ CWID: 888787934
 
 "**colorcoded**" is a color identification iOS app offering several tools (i.e. color search) that provides users a way to visualize different colors and its view relevant color data. Colorcoded uses a database containing approximately 3.6 million identified colors, with ongoing additions. Colorcoded also provides a unique way to interact with color using the onboard camera system on iOS devices.
 
