@@ -6,15 +6,21 @@
 //
 
 import SwiftUI
+//import FirebaseCore// first file that runs in app, main
 
-// first file that runs in app, main
 @main
 struct colorcodedApp: App {
+    
+    init() {
+//        FirebaseApp.configure()
+    }
     var body: some Scene {
         WindowGroup {
             NavigationView {
+                LoginView() // not ready yet
                 HomeView()
-                    .navigationBarHidden(true)
+//                ColorPickerView()
+                ContentView()   // for now color is here
             }
         }
     }

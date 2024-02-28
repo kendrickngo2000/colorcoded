@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		060779632B6BA04B00E46BAE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060779622B6BA04B00E46BAE /* HomeView.swift */; };
 		060779672B6BA2E300E46BAE /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060779662B6BA2E300E46BAE /* CircleButtonView.swift */; };
-		062B568C2B6CF915006FD205 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062B568B2B6CF915006FD205 /* ColorPicker.swift */; };
+		062271F72B889F5E0061ECF6 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062271F62B889F5E0061ECF6 /* SearchBar.swift */; };
+		062271F92B88A5B20061ECF6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062271F82B88A5B20061ECF6 /* LoginView.swift */; };
+		062271FC2B88B42A0061ECF6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 062271FB2B88B42A0061ECF6 /* GoogleService-Info.plist */; };
 		062BCFE62B6B93AC0072508F /* colorcodedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062BCFE52B6B93AC0072508F /* colorcodedApp.swift */; };
 		062BCFE82B6B93AC0072508F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062BCFE72B6B93AC0072508F /* ContentView.swift */; };
 		062BCFEA2B6B93AD0072508F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062BCFE92B6B93AD0072508F /* Assets.xcassets */; };
@@ -18,6 +20,7 @@
 		062BD0012B6B93AD0072508F /* colorcodedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062BD0002B6B93AD0072508F /* colorcodedUITests.swift */; };
 		062BD0032B6B93AD0072508F /* colorcodedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062BD0022B6B93AD0072508F /* colorcodedUITestsLaunchTests.swift */; };
 		062BD0112B6B99A40072508F /* color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062BD0102B6B99A40072508F /* color.swift */; };
+		06B906EB2B7ED6B5003BB410 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B906EA2B7ED6B5003BB410 /* ColorPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,9 @@
 /* Begin PBXFileReference section */
 		060779622B6BA04B00E46BAE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		060779662B6BA2E300E46BAE /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
-		062B568B2B6CF915006FD205 /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
+		062271F62B889F5E0061ECF6 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		062271F82B88A5B20061ECF6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		062271FB2B88B42A0061ECF6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		062BCFE22B6B93AC0072508F /* colorcoded.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = colorcoded.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		062BCFE52B6B93AC0072508F /* colorcodedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorcodedApp.swift; sourceTree = "<group>"; };
 		062BCFE72B6B93AC0072508F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +57,7 @@
 		062BD0002B6B93AD0072508F /* colorcodedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorcodedUITests.swift; sourceTree = "<group>"; };
 		062BD0022B6B93AD0072508F /* colorcodedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorcodedUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		062BD0102B6B99A40072508F /* color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = color.swift; sourceTree = "<group>"; };
+		06B906EA2B7ED6B5003BB410 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,18 +85,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0607795F2B6B9FD600E46BAE /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				062B568B2B6CF915006FD205 /* ColorPicker.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		060779612B6BA00000E46BAE /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				060779622B6BA04B00E46BAE /* HomeView.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -106,7 +103,6 @@
 		060779652B6BA2BD00E46BAE /* CircleButton */ = {
 			isa = PBXGroup;
 			children = (
-				060779662B6BA2E300E46BAE /* CircleButtonView.swift */,
 			);
 			path = CircleButton;
 			sourceTree = "<group>";
@@ -136,10 +132,16 @@
 			children = (
 				062BCFE52B6B93AC0072508F /* colorcodedApp.swift */,
 				062BCFE72B6B93AC0072508F /* ContentView.swift */,
+				060779622B6BA04B00E46BAE /* HomeView.swift */,
+				06B906EA2B7ED6B5003BB410 /* ColorPickerView.swift */,
+				060779662B6BA2E300E46BAE /* CircleButtonView.swift */,
 				062BCFE92B6B93AD0072508F /* Assets.xcassets */,
+				062271FB2B88B42A0061ECF6 /* GoogleService-Info.plist */,
 				062BD00F2B6B998D0072508F /* Extensions */,
 				066407CD2B6B9EDA00E5CD98 /* Core */,
 				062BCFEB2B6B93AD0072508F /* Preview Content */,
+				062271F62B889F5E0061ECF6 /* SearchBar.swift */,
+				062271F82B88A5B20061ECF6 /* LoginView.swift */,
 			);
 			path = colorcoded;
 			sourceTree = "<group>";
@@ -190,7 +192,6 @@
 			isa = PBXGroup;
 			children = (
 				060779612B6BA00000E46BAE /* ViewModels */,
-				0607795F2B6B9FD600E46BAE /* Views */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -283,6 +284,9 @@
 				Base,
 			);
 			mainGroup = 062BCFD92B6B93AC0072508F;
+			packageReferences = (
+				062271FA2B88B20F0061ECF6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 062BCFE32B6B93AC0072508F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -301,6 +305,7 @@
 			files = (
 				062BCFED2B6B93AD0072508F /* Preview Assets.xcassets in Resources */,
 				062BCFEA2B6B93AD0072508F /* Assets.xcassets in Resources */,
+				062271FC2B88B42A0061ECF6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,12 +330,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				062271F72B889F5E0061ECF6 /* SearchBar.swift in Sources */,
 				062BD0112B6B99A40072508F /* color.swift in Sources */,
 				060779632B6BA04B00E46BAE /* HomeView.swift in Sources */,
+				06B906EB2B7ED6B5003BB410 /* ColorPickerView.swift in Sources */,
 				062BCFE82B6B93AC0072508F /* ContentView.swift in Sources */,
 				060779672B6BA2E300E46BAE /* CircleButtonView.swift in Sources */,
+				062271F92B88A5B20061ECF6 /* LoginView.swift in Sources */,
 				062BCFE62B6B93AC0072508F /* colorcodedApp.swift in Sources */,
-				062B568C2B6CF915006FD205 /* ColorPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -668,6 +675,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		062271FA2B88B20F0061ECF6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.21.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 062BCFDA2B6B93AC0072508F /* Project object */;
 }
