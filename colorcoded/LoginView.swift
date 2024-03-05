@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct LoginView: View {
     @State var email = ""   // does this have to be private var?
@@ -51,6 +52,7 @@ struct LoginView: View {
                     .frame(width: 350, height: 1)
                 // sign up button
                 Button {
+                    register()
                 } label: {
                     Text("Sign up")
                         .bold()
@@ -66,6 +68,7 @@ struct LoginView: View {
                 .offset(y: 100)
                 // sign up button
                 Button {
+                    login()
                 } label: {
                     Text("Already have an account? Login")
                         .bold()
@@ -77,6 +80,23 @@ struct LoginView: View {
             .frame(width: 350)
         }
         .ignoresSafeArea()
+    }
+    
+    // login function
+    func login() {
+        Auth.auth().signIn(withEmail: email, password: password) { result, error in if error != nil {
+            print(error!.localizedDescription)
+            }
+        }
+    }
+    
+    // firebase register
+    func register() {
+        Auth.auth().createUser(withEmail: email, password: password) {
+            result, error in if error != nil {
+                print(error!.localizedDescription)  // forced unwrapped, not good practice
+            }
+        }
     }
 }
 

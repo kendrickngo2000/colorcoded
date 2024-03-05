@@ -6,13 +6,13 @@
 //
 
 import SwiftUI
-//import FirebaseCore// first file that runs in app, main
+import Firebase
 
 @main
 struct colorcodedApp: App {
     
     init() {
-//        FirebaseApp.configure()
+        FirebaseApp.configure()
     }
     var body: some Scene {
         WindowGroup {

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyDre5KjESdCmcEffkwFqw14o72_SQIitW4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>366550638624</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Cal-State-Fullerton.colorcoded</string>
+	<key>PROJECT_ID</key>
+	<string>colorcoded-3a48a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>colorcoded-3a48a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:366550638624:ios:2aaa73ebf25a564f99dc45</string>
+</dict>
+</plist>
