@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06EFBB1C2BAA9CAC00C40D01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EFBB1B2BAA9CAC00C40D01 /* ContentView.swift */; };
+		06EFBB1E2BAA9CC100C40D01 /* ColorPickerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EFBB1D2BAA9CC100C40D01 /* ColorPickerScreen.swift */; };
+		06EFBB202BAA9CCF00C40D01 /* ColorPaletteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EFBB1F2BAA9CCF00C40D01 /* ColorPaletteScreen.swift */; };
+		06EFBB222BAA9CD700C40D01 /* ColorID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EFBB212BAA9CD700C40D01 /* ColorID.swift */; };
 		06F9B22A2BAA9B250071C96D /* colorcoded2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F9B2292BAA9B250071C96D /* colorcoded2App.swift */; };
-		06F9B22C2BAA9B250071C96D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F9B22B2BAA9B250071C96D /* ContentView.swift */; };
 		06F9B22E2BAA9B260071C96D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06F9B22D2BAA9B260071C96D /* Assets.xcassets */; };
 		06F9B2312BAA9B260071C96D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06F9B2302BAA9B260071C96D /* Preview Assets.xcassets */; };
 		06F9B23B2BAA9B260071C96D /* colorcoded2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F9B23A2BAA9B260071C96D /* colorcoded2Tests.swift */; };
@@ -34,9 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06EFBB1B2BAA9CAC00C40D01 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		06EFBB1D2BAA9CC100C40D01 /* ColorPickerScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerScreen.swift; sourceTree = "<group>"; };
+		06EFBB1F2BAA9CCF00C40D01 /* ColorPaletteScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPaletteScreen.swift; sourceTree = "<group>"; };
+		06EFBB212BAA9CD700C40D01 /* ColorID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorID.swift; sourceTree = "<group>"; };
 		06F9B2262BAA9B250071C96D /* colorcoded2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = colorcoded2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06F9B2292BAA9B250071C96D /* colorcoded2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorcoded2App.swift; sourceTree = "<group>"; };
-		06F9B22B2BAA9B250071C96D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		06F9B22D2BAA9B260071C96D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06F9B2302BAA9B260071C96D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		06F9B2362BAA9B260071C96D /* colorcoded2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = colorcoded2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +101,10 @@
 			isa = PBXGroup;
 			children = (
 				06F9B2292BAA9B250071C96D /* colorcoded2App.swift */,
-				06F9B22B2BAA9B250071C96D /* ContentView.swift */,
+				06EFBB1B2BAA9CAC00C40D01 /* ContentView.swift */,
+				06EFBB1D2BAA9CC100C40D01 /* ColorPickerScreen.swift */,
+				06EFBB1F2BAA9CCF00C40D01 /* ColorPaletteScreen.swift */,
+				06EFBB212BAA9CD700C40D01 /* ColorID.swift */,
 				06F9B22D2BAA9B260071C96D /* Assets.xcassets */,
 				06F9B22F2BAA9B260071C96D /* Preview Content */,
 			);
@@ -257,8 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06F9B22C2BAA9B250071C96D /* ContentView.swift in Sources */,
+				06EFBB1E2BAA9CC100C40D01 /* ColorPickerScreen.swift in Sources */,
+				06EFBB202BAA9CCF00C40D01 /* ColorPaletteScreen.swift in Sources */,
+				06EFBB1C2BAA9CAC00C40D01 /* ContentView.swift in Sources */,
 				06F9B22A2BAA9B250071C96D /* colorcoded2App.swift in Sources */,
+				06EFBB222BAA9CD700C40D01 /* ColorID.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
