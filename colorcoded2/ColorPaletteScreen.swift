@@ -18,3 +18,4 @@ struct ColorPaletteNavigationStack: View {
 #Preview {
     ColorPaletteNavigationStack()
 }
+
