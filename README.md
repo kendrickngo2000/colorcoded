@@ -13,3 +13,4 @@ https://csufullerton.instructure.com/groups/1076829/pages/colorcoded
 
 ### product backlog: 
 https://www.notion.so/e6b1f24719384e07ba6e9caae35c6161?v=ab2fd5d49a3647d59542ccf3238bbbec&pvs=4
+https://docs.google.com/spreadsheets/d/1jYnDUPdo-24-xiVBPG5sk4N7RFC6uYRP-D6KgpcUB8U/edit#gid=2036597046
