@@ -80,6 +80,7 @@ struct ColorPickerNavigationStack: View {
                 // generate color palette button
                 if !colorList.isEmpty {
                     Button(action: {
+                        generateColorPalette(from: selectedColor)
                         isColorPaletteGenerated = true
                     }) {
                         Text("Generate Color Palette")
@@ -88,7 +89,7 @@ struct ColorPickerNavigationStack: View {
                 
                 // generatecolorPalette on button press
                 if isColorPaletteGenerated {
-                    LazyHStack(spacing: 16) {
+                    HStack(spacing: 16) {
                         ForEach(relatedColors, id: \.self) { color in Rectangle()
                                 .fill(color)
                                 .frame(width: 50, height: 50)
