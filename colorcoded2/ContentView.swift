@@ -49,11 +49,12 @@ struct AppTabView: View {
 }
 
 struct ContentView: View {
-    
     @State private var selection: AppScreen? = .ColorPicker
+    @StateObject private var colorPaletteModel = ColorPaletteModel()
     
     var body: some View {
         AppTabView(selection: $selection)
+            .environmentObject(colorPaletteModel)
     }
 }
 

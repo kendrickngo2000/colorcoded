@@ -15,6 +15,7 @@ struct ColorPickerNavigationStack: View {
     @State private var isColorPaletteGenerated: Bool = false
     @State private var selectedPaletteColor: Color?
     @State private var relatedColors: [Color] = []
+    @StateObject private var colorPaletteModel = ColorPaletteModel()
 
     // save color from user selected ColorWheel
     func saveColor(color: Color) {
@@ -70,13 +71,14 @@ struct ColorPickerNavigationStack: View {
                     saveColor(color: selectedColor)
                 }) {
                     Text("Save Color")
-                }                
+                }
                 // display saved color in list view
                 List(colorList.indices, id: \.self) { index in
                     Rectangle()
                         .fill(colorList[index])
                         .frame(height: 50)
                 }
+                
                 // generate color palette button
                 if !colorList.isEmpty {
                     Button(action: {
@@ -86,6 +88,14 @@ struct ColorPickerNavigationStack: View {
                         Text("Generate Color Palette")
                     }
                 }
+                
+                // save color palette button
+                Button(action: {
+                    colorPaletteModel.saveColorPalette(relatedColors)
+                }) {
+                    Text("Save Color Palette")
+                }
+                .padding(.top, 10)
                 
                 // generatecolorPalette on button press
                 if isColorPaletteGenerated {
