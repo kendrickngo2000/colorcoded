@@ -1,0 +1,40 @@
+some notes on an paper i found about generating color palattes
+
+RBG vs. HSL:
+	RGB
+	- 3 digit tuple
+	- (255, 255, 255) = white
+	- (0, 0, 0) = black
+	- not very intuitive
+
+	HSL (hue saturation lightness) 
+	- measured in degrees
+	- more closely represents the way we think about color 
+	- hue = typically what people think when they hear the word "color"
+		- i.e. red colors sit around 0 and 360, while blues are more in 175-220 range 
+	- saturation = percentage of color intensity
+		- i.e. dull = closer to 0%, whereas vibrant color closer to 100%
+	- lightness = defines color on lighter or darker end of spectrum
+
+USER FLOW:
+- takes starting color as input
+- when user clicks the generate button
+- outputs 3 color palettes based on that color
+- palettes are saved in this 'palettes' navigation tab page
+- at this point, users can utilize these colors or start over with a new color
+
+3 algs:
+- each palatte (3) uses a different algorithm to create 5 colors including the starting color (6 total colors are display)
+
+	THEORY:
+	- combination of complementary, analogous, triadic hue templates 
+	- 5 total colors: 1 complimentary, 2 analogous, 2 triadic
+
+	RANDOM:
+	- random but uses a 'mixing' technique where each random color value is divided by 2
+	- the result is an average of the two colors
+	- less bias
+	
+	EQUIDISTANT:
+	- technique demonstrated by Gregor Aisch
+	- uses HSL 

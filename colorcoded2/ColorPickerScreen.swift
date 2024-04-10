@@ -16,7 +16,7 @@ struct ColorPickerNavigationStack: View {
     @State private var selectedPaletteColor: Color?
     @State private var relatedColors: [Color] = []
 
-    
+    // save color from user selected ColorWheel
     func saveColor(color: Color) {
         let uiColor = UIColor(color)
         let components = uiColor.cgColor.components ?? [1, 1, 1, 1]
@@ -36,30 +36,29 @@ struct ColorPickerNavigationStack: View {
         return color
     }
     
-    func generateColorPalette() -> [Color] {
-        // logic to generate color palette
-        // this could be based on variations of hue, saturation, brightmess, etc
-        // for simplicity, we are creating random colors
-        var palette: [Color] = []
-        for _ in 0..<5 {
-            let color = Color(red: .random(in: 0...1),
-                              green: .random(in: 0...1),
-                              blue: .random(in: 0...1))
-            palette.append(color)
-        }
-        return palette
-    }
-    
-    func generateRelatedColors() {
-        // Implement your logic to generate related colors based on the selected color
-        // For simplicity, let's just create some random colors again
-        for _ in 0..<5 {
-            let color = Color(red: .random(in: 0...1),
-                              green: .random(in: 0...1),
-                              blue: .random(in: 0...1))
+    // generate color palette
+    func generateColorPalette(from baseColor: Color) {
+        let uiColor = UIColor(baseColor)
+        var hue: CGFloat = 0
+        var saturation: CGFloat = 0
+        var brightness: CGFloat = 0
+        var alpha: CGFloat = 0
+        
+        uiColor.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
+        
+        var relatedColors: [Color] = []
+        
+        // generate 5 additional colors by adjusting the hue
+        for i in 1...5 {
+            let adjustedHue = (hue + CGFloat(i) * 0.1) .truncatingRemainder(dividingBy: 1.0)
+            let color = Color(hue: Double(adjustedHue), saturation: Double(saturation), brightness: Double(brightness), opacity: Double(alpha))
             relatedColors.append(color)
         }
+        // add the original color to the beginning of the list
+        relatedColors.insert(baseColor, at: 0)
+        self.relatedColors = relatedColors
     }
+    
 
     var body: some View {
         NavigationStack {
@@ -86,23 +85,16 @@ struct ColorPickerNavigationStack: View {
                         Text("Generate Color Palette")
                     }
                 }
-                // display related colors when a palette color is selected
-                if let selectedPaletteColor = selectedPaletteColor {
-                    Text("Related Colors:")
-                        .font(.headline)
-                    ScrollView(.horizontal) {
-                        HStack {
-                            ForEach(relatedColors, id: \.self) {
-                                color in Rectangle()
-                                    .fill(color)
-                                    .frame(width: 50, height: 50)
-                                    .onTapGesture {
-                                        print("Selected color: \(color)")
-                                    }
-                            }
+                
+                // generatecolorPalette on button press
+                if isColorPaletteGenerated {
+                    LazyHStack(spacing: 16) {
+                        ForEach(relatedColors, id: \.self) { color in Rectangle()
+                                .fill(color)
+                                .frame(width: 50, height: 50)
                         }
-                        .padding()
                     }
+                    .padding()
                 }
             }
             .onAppear {
