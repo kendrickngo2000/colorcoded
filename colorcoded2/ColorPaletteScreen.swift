@@ -30,7 +30,7 @@ struct ColorPaletteNavigationStack: View {
         }
     }
 }
-//#Preview {
-//    ColorPaletteNavigationStack()
-//}
+#Preview {
+    ColorPaletteNavigationStack()
+}
 

@@ -38,3 +38,14 @@ USER FLOW:
 	EQUIDISTANT:
 	- technique demonstrated by Gregor Aisch
 	- uses HSL 
+
+How my first color palette generater alg works:
+	1)  takes in base color as input, converts into UIColor object
+	2) extracts hue, saturation, brightnes, and alpha (opacity) 
+	3) initializes an array to hold the related colors
+ 	4) loop through 5 times (for 6 total colors), add 0.1 to input and take modulo of 1.0.
+	NOTE: this keeps base color input within range of 0 and 1. We keep saturation, brightness, and opacity the same to ensure
+	harmonious colors.
+	5) append the colors into the list
+	6) insert the original input at the beginning of list
+	7) assigns the array to a property for further use
